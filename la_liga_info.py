@@ -16,7 +16,8 @@ def la_liga_standings():
 def lookup_team(name):
     conn = sqlite3.connect('soccer_teams.db')
     c = conn.cursor()
-    c.execute('''SELECT * FROM teams WHERE name=?''', (name))
+    lower_name = name.lower()
+    c.execute('''SELECT * FROM teams WHERE LOWER(name) LIKE ?''', ('%' + lower_name + '%',))
     team = c.fetchone()
     conn.close()
     return team

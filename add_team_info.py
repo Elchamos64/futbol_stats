@@ -30,32 +30,18 @@ def add_team(name, matches_played, wins, draws, losses, goals_for, goals_against
 # Main function to interact with the user
 def main():
     create_table()
-    
-    while True:
-        print("\n1. Add a new team")
-        print("2. Quit")
-        
-        choice = input("Enter your choice (1/2): ")
-        
-        if choice == '1':
-            name = input("Enter team name: ")
-            matches_played = input("Enter MP: ")
-            wins = int(input("Enter W: "))
-            draws = int(input("Enter D: "))
-            losses = int(input("Enter L: "))
-            goals_for = int(input("Enter GF: "))
-            goals_against = int(input("Enter GA: "))
-            goal_difference = int(goals_for - goals_against)
-            points = int((wins * 3) + draws)
-            add_team(name, matches_played, wins, draws, losses, goals_for, goals_against, goal_difference, points)
-            print("Team added successfully!")
-        
-        elif choice == '2':
-            print("Exiting program.")
-            break
-        
-        else:
-            print("Invalid choice. Please enter 1 or 2.")
+    name = "Villareal"
+    matches_played = 34
+    wins = 12
+    draws = 9
+    losses = 13
+    goals_for = 56
+    goals_against = 58
+    goal_difference = int(goals_for - goals_against)
+    points = int((wins * 3) + draws)
+    add_team(name, matches_played, wins, draws, losses, goals_for, goals_against, goal_difference, points)
+    print(f"\n{name} added succesfully")
+            
 
 if __name__ == "__main__":
     main()
