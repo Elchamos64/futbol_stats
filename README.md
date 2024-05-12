@@ -4,9 +4,7 @@ I wrote a pryhton program that uses SQLite3 to create and manage databases about
 
 I love watching futbol and I wanted to be able to see the stats of my favorite team more easily and in an easy to read format. That's why I created this app.
 
-{Provide a link to your YouTube demonstration. It should be a 4-5 minute demo of the software running, a walkthrough of the code, and a view of how created the Relational Database.}
-
-[Software Demo Video](http://youtube.link.goes.here)
+[Video walkthrough](https://youtu.be/OWhXth0sLQI)
 
 # Relational Database
 
