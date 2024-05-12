@@ -16,7 +16,7 @@ The table is stucture by team. Each team has a team name, matches played, goals 
 
 I used `python` to help me write the code structure with the functions and the variables. `Sqilte3` to help me build the database and the structure of the table. The `tabulate` module to help me display the data as a grid, so that it's easier to read.
 
-I used VScode as my code editor, python as my programing langague and the folowig modules:
+I used VScode as my code editor, python as my programing language and the folowig modules:
 - Sqlite3
 - Tabulate
 
