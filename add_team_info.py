@@ -27,9 +27,16 @@ def add_team(name, matches_played, wins, draws, losses, goals_for, goals_against
     conn.commit()
     conn.close()
 
+# Function to delete a team from the database
+def delete_team(name):
+    conn = sqlite3.connect('soccer_teams.db')
+    c = conn.cursor()
+    c.execute('''DELETE FROM teams WHERE name = ?''', (name,))
+    conn.commit()
+    conn.close()
+
 # Main function to interact with the user
 def main():
-    create_table()
     name = "Villareal"
     matches_played = 34
     wins = 12

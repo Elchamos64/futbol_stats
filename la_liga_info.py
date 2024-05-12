@@ -1,7 +1,7 @@
 import sqlite3
 from tabulate import tabulate
 
-# Function to look up La lga standings
+# Function to look up La liga standings
 
 def la_liga_standings():
     conn = sqlite3.connect('soccer_teams.db')
